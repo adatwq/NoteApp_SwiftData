@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddNoteView: View {
+    @Environment(\.modelContext) var context
     @Environment(\.dismiss) var dismiss
     @State var title: String = ""
     @State var text: String = ""
@@ -23,7 +24,8 @@ struct AddNoteView: View {
             .toolbar{
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Save"){
-                        
+                        save()
+                        dismiss()
                     }
                 }
                 
@@ -34,6 +36,11 @@ struct AddNoteView: View {
                 }
             }
         }
+    }
+    
+    func save(){
+        let newNote = Note(title: title, text: text)
+        context.insert(newNote)
     }
 }
 

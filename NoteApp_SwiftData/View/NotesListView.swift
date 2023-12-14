@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct NotesListView: View {
+    @Environment(\.modelContext) var context
+    @Query var notes: [Note]
     @State var showAddNoteView: Bool = false
     var body: some View {
         NavigationStack{
                 List{
-                    ForEach(0..<10, id: \.self){ i in
-                        Text("Note")
+                    ForEach(notes){ note in
+                        Text(note.title)
                     }
                 }
                 .toolbar{

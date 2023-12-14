@@ -12,6 +12,7 @@
 		DFD3D7582B2B21C500A58EB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD3D7572B2B21C500A58EB2 /* Assets.xcassets */; };
 		DFD3D75B2B2B21C500A58EB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD3D75A2B2B21C500A58EB2 /* Preview Assets.xcassets */; };
 		DFD3D7622B2B22DF00A58EB2 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD3D7612B2B22DF00A58EB2 /* AddNoteView.swift */; };
+		DFD3D7652B2B29AE00A58EB2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD3D7642B2B29AE00A58EB2 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		DFD3D7572B2B21C500A58EB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFD3D75A2B2B21C500A58EB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DFD3D7612B2B22DF00A58EB2 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		DFD3D7642B2B29AE00A58EB2 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				DFD3D7532B2B21C300A58EB2 /* NoteApp_SwiftDataApp.swift */,
-				DFD3D7552B2B21C300A58EB2 /* NotesListView.swift */,
-				DFD3D7612B2B22DF00A58EB2 /* AddNoteView.swift */,
+				DFD3D7662B2B2A3B00A58EB2 /* View */,
+				DFD3D7632B2B29A500A58EB2 /* Model */,
 				DFD3D7572B2B21C500A58EB2 /* Assets.xcassets */,
 				DFD3D7592B2B21C500A58EB2 /* Preview Content */,
 			);
@@ -68,6 +70,23 @@
 				DFD3D75A2B2B21C500A58EB2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DFD3D7632B2B29A500A58EB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFD3D7642B2B29AE00A58EB2 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFD3D7662B2B2A3B00A58EB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFD3D7552B2B21C300A58EB2 /* NotesListView.swift */,
+				DFD3D7612B2B22DF00A58EB2 /* AddNoteView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +162,7 @@
 				DFD3D7622B2B22DF00A58EB2 /* AddNoteView.swift in Sources */,
 				DFD3D7562B2B21C300A58EB2 /* NotesListView.swift in Sources */,
 				DFD3D7542B2B21C300A58EB2 /* NoteApp_SwiftDataApp.swift in Sources */,
+				DFD3D7652B2B29AE00A58EB2 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
