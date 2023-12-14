@@ -11,7 +11,7 @@ import SwiftUI
 struct NoteApp_SwiftDataApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NotesListView()
         }
     }
 }
