@@ -34,6 +34,8 @@ struct NotesListView: View {
             .navigationTitle("Notes")
         }
     }
+    //Challenge yourself - delete function
+
 }
 
 #Preview {

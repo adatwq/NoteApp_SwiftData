@@ -42,6 +42,8 @@ struct AddNoteView: View {
         let newNote = Note(title: title, text: text)
         context.insert(newNote)
     }
+    
+    //Challenge yourself - update function
 }
 
 #Preview {
